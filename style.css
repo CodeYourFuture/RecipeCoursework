@@ -1,0 +1,104 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: black;
+    color:white;
+}
+.navbar {
+    margin-bottom: 5rem;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-size: 15px;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.nav_links {
+    display: flex;
+    flex-wrap: wrap;
+    
+    text-decoration: none;
+}
+.logo {
+    
+    display: flex;
+    padding-right: 5rem;
+    text-decoration: none;
+    font-size: 20px;
+    color:rgb(110, 8, 39);
+}
+.navbar a:hover {
+    color: coral;
+    background-color: wheat;
+}
+.image {
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+}
+.explore {
+    padding-left: 40px;
+    color: rgb(231, 152, 169);
+    font-size: 1.5rem;
+}
+.article1, .article2, .article3 {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.article_image1, .article_image2, .article_image3 {
+    padding-right: 7%;
+}
+.articles a:hover {
+    color: coral;
+    
+}
+.articles a {
+    text-decoration: none;
+}
+.article1_and_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer {
+    margin-top: 10rem;
+    
+}
+.footer > p {
+    background-color:darkgreen
+}
+
+.meat_balls > img {
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 7rem;
+
+}
+h3 {
+    padding-left: 5%;
+    font-size: 25px;
+}
+.meat_balls {
+    display: flex;
+}
+.ingrediants {
+    text-decoration: none;
+}
+.meat_balls_list {
+    display: flex;
+    flex-direction: column;
+    
+}
+.meat_balls_list > p {
+    padding-left: 3rem;
+    font-weight: bold;
+    font-size: 20px;
+}
