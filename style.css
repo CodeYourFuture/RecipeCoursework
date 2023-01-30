@@ -1,0 +1,113 @@
+
+.container{
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 5px;
+    grid-template-areas: 
+    "h h h h h"
+    "nav nav nav sp sp"
+    "ma ma ma sp sp"
+    "ma ma ma sp sp"
+    "ma ma ma sp sp"
+    "nav2 nav2 se se se"
+    "nav2 nav2 se se se"
+    "nav2 nav2 se se se"
+    "foot foot foot foot foot"
+    ;
+}   
+
+.box{
+    background-color: rgb(174, 171, 171);
+    display: flex;
+    color: rgb(10, 1, 2);   
+}
+
+.head{
+    grid-area: h;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(3, 25, 76);
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    list-style: none;
+    text-align: start;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav ul li a{
+    padding: 6px 15px;
+    border-radius: 20px
+}
+ul li a:hover, .active{
+    background: white;
+    color: #450230;
+}
+.main{
+    grid-area: ma;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(174, 171, 171);
+    color: rgb(3, 25, 76);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.main p {
+    margin: 20px;
+    font-size:larger;
+}
+.nav{
+    grid-area: nav;
+}
+
+.side-part{
+    grid-area: sp;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color:rgb(3, 25, 76) ;
+}
+.side-part h2{
+    font-size: 1.5rem;
+    
+}
+img{
+    height: 300px;
+    width: 400px;
+}
+.secion{
+    grid-area: se;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px;
+    color: rgb(3, 25, 76);
+    font-size: large;
+}
+.nav2{
+    grid-area: nav2;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    color: rgb(3, 25, 76);
+    font-size: large;
+}
+.footer{
+    grid-area: foot;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: rgb(3, 25, 76);
+}
