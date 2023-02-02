@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+Body{
+    background: rgba(0, 0, 0, 0.7) url('https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80') center center fixed;
+background-size: cover;
+background-position: 20px;
+background-blend-mode: darken;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container h1{
+    color: orangered;
+    margin-left: 10px;
+    cursor: pointer;;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+    transition: 3.ms;
+
+}
+.navbar ul li a:hover{
+    box-shadow: 0 3px 50px orangered inset,0 3px 50px orangered inset,0 3px 50px orangered inset,0 3px 50px orangered inset;
+}
+.content{
+    position: absolute;
+    color: #fff;
+    top: 40%;
+    left: 30%;
+}
+.content h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 30%;
+}
+.content h1{
+    font-size: 50px;
+}
+.content p{
+    text-align: center;
+    margin-top: 17px;
+}
+.search{
+    object-position: 1rem;
+    margin-top: 25%
+    margin-left: 35%;
+}
+
+.search input{
+    outline: none;
+    border: none;
+    padding: 11px 38px;
+    size: 0.5em;
+    width: 7%;
+}
+.order{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 49%;
+}
+.order a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: orangered;
+
+}
+
+h5{
+    font-size: medium;
+     color: blue;
+     -moz-text-decoration-color: aqua;
+     text-overflow: clip;
+}
+     
+    h6{
+    font-size: medium;
+     color: blue;
+     -moz-text-decoration-color: aqua;
+     text-overflow: clip;
+    
+
+}
+
+
