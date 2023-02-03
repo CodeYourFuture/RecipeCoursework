@@ -1,0 +1,81 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.main {
+display: flex;
+column-gap: 3rem;
+
+}
+
+.main__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container__p {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.container__p:nth-child(3) {
+    grid-row: 1;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: solid 1px grey;
+    margin-top: 5rem;
+
+}
+
+.ingredients {
+    margin-left: 3rem;
+}
+ol {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    max-width: 30rem;
+}
+
+span {
+    margin-top: 2rem;
+}
+.list1 {
+    list-style: url(/files/icons8-green-circle-48.png);
+}
+
+.list2 {
+    list-style: url(/files/icons8-blue-circle-48.png);
+}
+
+.list3 {
+    list-style: url(/files/icons8-red-circle-48.png);
+}
+
+.list4 {
+    list-style: url(/files/icons8-filled-circle-48.png);
+}
+
+.list5 {
+    list-style: url(/files/icons8-100--48.png);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 10rem 0 10rem;
+    height: 150px;
+    border-top: #000 solid 1px;
+  }
