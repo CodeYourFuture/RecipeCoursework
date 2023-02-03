@@ -1,0 +1,12 @@
+html, body{
+  padding: 2rem 4rem;
+}
+
+img{
+  width: 50%;
+}
+
+.p{
+  padding-right: 20rem;
+  word-wrap: wrap;
+}
