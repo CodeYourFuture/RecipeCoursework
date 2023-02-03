@@ -1,0 +1,58 @@
+header {
+    font-family: 'Lobster', cursive;
+    background-color: aqua;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+main {
+    font-family: 'Itim', cursive;
+    margin: 1rem 3rem 1rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas: 
+    "im1 tx1 im2"
+    "tx2 tx2 im2";
+}
+
+#top_image {
+grid-area: im1;
+width: 550px;
+}
+
+#bottom_image {
+    grid-area: im2;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 5rem;
+}
+
+#ingredients {
+    grid-area: tx1;
+}
+
+#steps {
+    grid-area: tx2;
+}
+
+div {
+    background-color: aquamarine;
+    border: 2px solid goldenrod;
+    font-size: 24px;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+footer {
+    font-family: 'Lobster', cursive;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    background-color: aqua;
+}
