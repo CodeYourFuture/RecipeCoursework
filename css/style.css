@@ -1,0 +1,84 @@
+ 
+ .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: 650px 340px 600px auto auto;
+    font-family: 'Fira Sans', sans-serif;
+}
+header {
+    grid-column: 1;
+    grid-row:1;
+    
+    
+}
+.photo-pierogi {
+    grid-column: 2 / -1;
+    grid-row: 1;
+    width: 700px;
+    height: 650px;
+        
+}
+ul {
+    font-weight: bold;
+}
+
+.about { 
+    grid-column: 1 / -1;
+    grid-row: 2;
+    border-top: 4px solid rgb(199, 223, 238);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 4px solid rgb(199, 223, 238);
+    width: 900px;
+    justify-content: center;
+    margin-left: 150px;
+    
+    
+}   
+.ingredients {
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid rgb(199, 223, 238);
+    padding: 10px; 
+    margin: 20px; 
+    /* height: 27rem; */
+}
+
+.preparation {
+    grid-column: 2 / -1;
+    grid-row: 3 / -1;
+
+}
+
+
+h1 {
+    padding-top: 300px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 50px;
+}
+h2 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 30px;
+}
+.folded-pierogi {
+    width: 400px;
+    padding: 50px;
+
+}
+
+.preparation-title {
+    border-bottom: 2px solid rgb(199, 223, 238);
+    padding-bottom: 10px;
+    width: 150px;
+}
+.ingredients-title {
+    padding-left: 20px;
+    border-bottom: 2px solid rgb(199, 223, 238);
+    padding-bottom: 10px;
+    width: 150px;
+}
