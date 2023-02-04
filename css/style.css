@@ -1,0 +1,108 @@
+@media screen and (min-width: 600px) {
+/** General styles  */
+body{
+    margin: 0;
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif; 
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 4rem 95rem 6rem;  
+    max-width: 1200px;
+}
+}
+.main{
+    display: flex;
+    flex-direction: column; 
+}
+/** Header style */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.logo_header{
+    height: 3rem;
+    width: auto;
+}
+/** Navigation bar styles */
+.navigation_list {
+    display: flex;
+    list-style: none;
+    padding-right: 1rem;
+    font-size: 1rem;
+    margin-right: 2.4rem;
+}
+.navigation_item{
+    padding: 0rem 3rem;
+}
+.navigation_link{
+    color: #0077b6;
+    text-decoration: none;
+    padding: 0 0.8rem;
+}
+.navigation_link:hover {
+    color: #f8520b;
+}
+/** Hero styles  */
+.hero_ingredients{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    color: whitesmoke;
+    text-shadow: -5px 5px 0px rgb(157, 147, 147);
+    text-align: center;
+    padding-top: 10rem;
+    font-size: 5rem;
+}
+.hero{
+    background-image: url("../images/main.jpeg");
+    background-color: #cccccc;
+    background-size: cover;
+    width: 70%;
+}
+
+/** checkbox style */
+.ingredients{
+    padding-right: 2rem;
+    padding-left: 1rem;
+}
+h3{
+    font-family: pacifico;
+}
+/** step by step styles  */
+.recipe_steps{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 25rem);
+    gap: 5px;
+    
+  }
+
+  .article_steps{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    margin: 0 2rem;
+    margin-top: 3rem;
+  }
+  .image_step{
+    width:15rem;
+  }
+
+/** footer  */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo_footer{
+    height: 2rem;
+    width: auto;
+}
+@media screen and (max-width: 500px) {
+    .recipe_steps{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 25rem);
+        gap: 5px;
+      }
+}
