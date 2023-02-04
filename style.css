@@ -1,0 +1,136 @@
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+  }
+  nav{
+font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px  25px;
+    
+  }
+  nav ul li a{
+    color: #06181c;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  nav ul li a:hover{
+    color: #24720a;
+    transition: .4s;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 0.2fr 1.4fr 1.2fr 1.6fr ;
+    grid-template-areas:
+      "nav nav nav nav"
+      "sidebar sidebar main main"
+      "sidebar sidebar main main"
+      "content1 content2  main main"
+         
+  
+      ;
+    grid-gap: 0.2rem;
+    font-weight: 800;
+    font-size: 12px;
+    color: #060908;
+    text-align: center;
+  }
+  
+  nav {
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  main {
+   
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  #sidebar {
+    font-family: "Inter", sans-serif;
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  #content1 {
+   
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  #content2 {
+   
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  h1{
+     font-family: "Inter", sans-serif;
+      font-size: 180px;
+    margin-top:3%;
+    
+  }
+  
+  
+  
+  
+  @media only screen and (max-width: 550px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+      grid-template-areas:
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "content2"
+  
+    }
+  }
+  .btn{
+	background-color:#040505;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 18px 40px;
+	border-radius: 5px;
+	transition: transform .4s; 
+}
+.btn:hover{
+	transform: scale(1.2);
+}
+.content1:before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 5px;
+  background: #191970;
+  left: 0;
+  top: 50%;
+  position: absolute;}
+  .smallphoto{
+    margin-left: 70px;
+    margin-right: 70px;
+  }
