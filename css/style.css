@@ -1,0 +1,123 @@
+/* HEADER STYLE */
+header {
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+}
+
+.header-icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 400px; /* MY WORK */
+}
+
+/* MAIN-CONTAINER STYLE */
+.main-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row: 500px;
+  grid-template-areas: "a m m m";
+}
+
+.main-article{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-areas: "h h"
+    "ing  how"
+    "par par";
+    justify-content: center;
+}
+
+.h2{
+    grid-area: h;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.ingredient{
+    grid-area: ing;
+}
+
+.how-to-cook{
+    grid-area: how;
+}
+
+.parag{
+    grid-area: par;
+    padding: 20px;
+}
+
+
+/* MAIN STYLE */
+main {
+  border: 2px solid grey;
+  grid-area: m;
+}
+
+
+/* ASIDE STYLE */
+aside {
+  grid-area: a;
+  border: 2px solid grey;
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  grid-template-areas:
+    "kebab"
+    "baklava"
+    "kahve";
+}
+.aside-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#overflow {
+  padding: 10px;
+  width: 100%;
+  height: 580px;
+  overflow: scroll;
+}
+
+
+.kebab {
+  background-color: indianred;
+  grid-area: kebab;
+  margin: 10px;
+}
+
+.baklava {
+  background-color: aqua;
+  grid-area: baklava;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.kahve {
+  background-color: yellow;
+  grid-area: kahve;
+  margin: 10px;
+}
+
+/* FOOTER STYLE */
+footer {
+  color: rgb(185, 185, 185);
+  text-align: center;
+  margin-top: 20px;
+}
