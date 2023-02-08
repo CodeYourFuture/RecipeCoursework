@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kristi&family=Quicksand:wght@300&family=Syncopate&family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="email-validation.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <header>
+    <nav>
+      <h2>Recipes made easy</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <main class="home-container">
+      <div class="container1">
+        <img
+          src="pannacotta2"
+          alt="pana cotta in a black plate"
+          class="image-background"
+        />
+
+        <section class="main-heading">
+          <p class="font-style">Strawberry</p>
+          <p class="font-style">Panna Cotta</p>
+          <p class="font-style1">Delight in every Bite !</p>
+        </section>
+      </div>
+    </main>
+    <section class="recipe-container">
+      <section>
+        <img src="Vanilla-panna-cotta.webp" class="panna-cotta-img" />
+        <div class="ingridients-container">
+          <h2>Ingridients</h2>
+          <ul>
+            <li>2 ½ sheets gelatine</li>
+            <li>150ml milk</li>
+            <li>400ml double cream</li>
+            <li>60g caster sugar</li>
+            <li>1 vanilla pod, split lengthways</li>
+            <li>fresh strawberries, to serve</li>
+            <li>strawberry compote, to serve</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="recipe-tittle-container">
+        <h4 class="font-size-h4">Strawberry Panna Cotta</h4>
+        <p>Prep time: 10min | Cook: 5 min | Serves: 4</p>
+      </section>
+
+      <section class="method-container">
+        <h3>Method</h3>
+        <h5>STEP 1</h5>
+        <p>
+          Add the sheets of gelatine to a bowl of cold water and soak for 5
+          mins.
+        </p>
+        <h5>STEP 2</h5>
+        <p>
+          Pour the milk and cream into a saucepan with the sugar and vanilla
+          seeds (to scrape the seeds out of the pod, use the back of a knife).
+          Stir to combine and bring to a simmer, then remove from the heat. Take
+          the gelatine out of the cold water and squeeze out the excess, then
+          add to the milk mixture. Stir until completely dissolved. Tip into
+          four ramekins and place in the fridge to set for at least a couple of
+          hours.
+        </p>
+
+        <h5>STEP 3</h5>
+        <p>
+          To serve, turn each ramekin upside-down onto a serving plate. If the
+          panna cotta won't drop out, carefully dip the ramekin in a bowl of
+          warm water to loosen it. Serve with a drizzle of strawberry compote
+          and sliced fresh strawberries.
+        </p>
+      </section>
+    </section>
+    <section class="form-container">
+      <div class="box">
+        <div class="styling-header-form">
+          <h2>Subscribe to our Newsletter</h2>
+        </div>
+        <p>
+          Our weekly newsletter provides you with the latest and most delicious
+          recipes.
+        </p>
+        <div class="form-control">
+          <input
+            type="email"
+            label="e-mail"
+            class="input"
+            placeholder="Enter e-mail adress"
+            id="email-input"
+          />
+          <button type="button" onclick="validateEmail()" class="btn">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
