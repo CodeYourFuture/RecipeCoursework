@@ -1,0 +1,30 @@
+
+  265  git status
+  266  git add index.html
+  267  git status
+  
+  
+  270  git branch  saqib
+  
+  271  git branch -l
+
+  272  git branch --help
+  
+  273  git checkout saqib
+  
+  274  git branch -l
+  275   git commit -m "practice"
+  
+  276  git status
+  
+  277  git push
+  278  git push --set-upstream origin saqib
+  
+  279  git log
+  git checkout main
+  
+  280  git pull
+
+
+  automatically create ans switch to branch
+  git checkout -b test 
